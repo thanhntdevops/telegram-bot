@@ -1,4 +1,4 @@
-#Telegram Bot
+# Telegram Bot
 
 - monitor and remote computer via Telegram
 - get link to remote computer via ssh
@@ -9,7 +9,7 @@
 sudo apt-get update && apt-get install tmate
 sudo bash install.sh
 ```
-## Uninstall
+## Uninstallation
 ```
 sudo bash uninstall.sh
 ```
