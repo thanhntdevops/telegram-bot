@@ -1,0 +1,13 @@
+[Unit]
+Description=decuaanhthanhbot
+
+[Service]
+RemainAfterExit=yes
+WorkingDirectory=/srv/telegrambot
+ExecStart=/srv/telegrambot/.venv/bin/python3 telegram-bot.py
+Restart=on-failure
+RestartSec=60
+RestartForceExitStatus=143
+
+[Install]
+WantedBy=default.target
