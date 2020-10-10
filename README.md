@@ -1,7 +1,7 @@
 # Telegram Bot
 
-- monitor and remote computer via Telegram
-- get link to remote computer via ssh
+- monitor and control remotely computer via Telegram
+- get link to access remotely computer via ssh
 
 ## Installation
 - modify private-variable file with your bot token and your chat id
