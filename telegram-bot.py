@@ -1,15 +1,14 @@
-import telebot, subprocess, requests, sys
+import telebot, subprocess, requests, sys, os
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN= os.getenv('TOKEN')
-OWNER_CHAT_ID=os.getenv('OWNER_CHAT_ID')
+TOKEN = os.getenv('TOKEN')
+OWNER_CHAT_ID = os.getenv('OWNER_CHAT_ID')
 bot = telebot.TeleBot(TOKEN)
-
 
 #check all message chat id
 def check_chat_id(message):
-    if message.chat.id != OWNER_CHAT_ID:
+    if message.chat.id != int(OWNER_CHAT_ID):
         bot.send_message(message.chat.id, "em co nguoi yeu roi nhe. anh dung tan em nua")
         warning_message ="anh oi thang "+str(message.chat.first_name)+" "+str(message.chat.last_name)+" no tan em"
         bot.send_message(OWNER_CHAT_ID,warning_message)
