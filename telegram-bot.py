@@ -1,9 +1,11 @@
 import telebot, subprocess, requests, sys
+from dotenv import load_dotenv
 
-fi = open("private-variable","r")
-TOKEN = fi.readline()
-OWNER_CHAT_ID = fi.readline()
+load_dotenv()
+TOKEN= os.getenv('TOKEN')
+OWNER_CHAT_ID=os.getenv('OWNER_CHAT_ID')
 bot = telebot.TeleBot(TOKEN)
+
 
 #check all message chat id
 def check_chat_id(message):

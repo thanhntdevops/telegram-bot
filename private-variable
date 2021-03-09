@@ -1,8 +1,0 @@
-# line 1 is your bot token, example: your bot token is 1366109548:AAGxVWLd3Ha2srODbED-KyDY_hYbR1lvL3s. type: string
-'1366109548:AAGxVWLd3Ha2srODbED-KyDY_hYbR1lvL3s'
-# line 2 is your chat id, example: 1056940043. type: int
-1056940043
-###################################################################################################################################
-#	CONTENT OF EXAMPLE FILE: (ONLY 2 LINE INCLUDE YOUR BOT TOKEN AND YOUR CHAT ID)
-'1366109548:AAGxVWLd3Ha2srODbED-KyDY_hYbR1lvL3s'
-1056940043
